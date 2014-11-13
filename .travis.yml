@@ -12,6 +12,6 @@ env:
 
 
 before_script:
-    - ./gradlew wrapper -PgradleVersion=$GRADLE_VERSION$
+    - ./gradlew wrapper -PgradleVersion=$GRADLE_VERSION
 
 script: ./gradlew
