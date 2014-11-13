@@ -11,7 +11,7 @@ env:
     - GRADLE_VERSION=2.1
 
 
-before_script:
+install:
     - ./gradlew wrapper -PgradleVersion=$GRADLE_VERSION
 
 script: ./gradlew
