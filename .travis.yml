@@ -1,0 +1,16 @@
+language: java
+
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk6
+  - openjdk7
+
+env:
+    -GRADLE_VERSION=2.2
+    -GRADLE_VERSION=2.1
+
+
+before_script ./gradlew wrapper -PgradleVersion=$GRADLE_VERSION$
+
+script ./gradlew
