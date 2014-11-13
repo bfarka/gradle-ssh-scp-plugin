@@ -1,0 +1,9 @@
+task wrapper(type: Wrapper) {
+
+    if(project.hasProperty("gradleVersion")){
+        gradleVersion = project.getProperty("gradleVersion")
+    }else{
+        gradleVersion = '2.2'
+    }
+
+}
