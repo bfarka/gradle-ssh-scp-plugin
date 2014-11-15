@@ -16,4 +16,4 @@ env:
 install:
     - ./gradlew wrapper -PgradleVersion=$GRADLE_VERSION
 
-script: ./gradlew
+script: ./gradlew build
